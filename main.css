@@ -178,7 +178,7 @@ footer a:hover {
 
 .legal-information-page h1 {
     text-align: center;
-    margin-top: 114px;
+    margin-top: 124px;
     margin-left: 23px;
     color: rgb(255, 87, 87);
     font-size: 32px;
@@ -195,7 +195,8 @@ footer a:hover {
 }
 
 .go-back-from-legal-page{
-    
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 
