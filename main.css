@@ -24,6 +24,7 @@
     display: flex;
      /* Full width */
     width: 100%;
+    height: auto;
      /* Makes the navigation bar fixed to the top of the screen */
     position: fixed;
     top: 0px;
@@ -35,8 +36,55 @@
 
 .company-logo img {
     height: auto;
-    width: 100%;
-    max-width: 68px;
+    width: 68px;
+}
+
+ul {
+    list-style-type: none;
+    border: 2px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    text-decoration: none;
+}
+
+li {
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 24px 20px 24px 22px;
+    resize: both;
+    border-radius: 4px;
+}
+
+li img {
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    padding: 22px 16px 16px 24px;
+}
+
+li a:hover {
+    background-color: rgb(255, 87, 87);
+    border: radius 12px;
+    opacity: 0.8
+}
+
+li a :active {
+    border: radius 12px;
+    opacity: 0.5;
 }
 
 
@@ -177,7 +225,8 @@ footer a:hover {
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
-    font-size: 4.9vw;
+    /* font-size: 4.9vw; */
+    font-size: 72px;
     text-align: left;
     display: flex start;
     flex-direction: column;
@@ -206,12 +255,14 @@ footer a:hover {
     margin-left: 50px;
     height: auto;
     width: 55%;
+    max-width: 765px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .chef-picture p {
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
+    font-size: 16px;
     margin-left: -24px;
     color: black;
     font-family: "Open Sans", sans-serif;
@@ -220,15 +271,32 @@ footer a:hover {
     margin-bottom: 80px;
 }
 
+@media screen and (max-width: 950px) {
+    .chef-picture img {
+      width: 100%;
+      float: center;
+    }
+    .home-1-hook{
+        text-align: center;
+        font-size: 43px;
+        width: 100%;
+    }
+    .home-1-hook p{
+        font-size: 14px;
+    }
+  }
+
 .button-to-apply {
     /* Padding/Margins */
     margin-top: 10px;
     /* Font */
-    font-size: 100;
+    font-size: 22px;
     font-weight: bold;
     /* Button */
-    height: 46px;
-    width: 300px;
+    /* height: 3vw;
+    width: 20vw; */
+    height: 40px;
+    width: 250px;
     border-radius: 23px;
     background-color: rgb(255, 145, 77);
     border: none;
@@ -539,56 +607,16 @@ hr.benefits-line {
 }
 
 
-ul {
-    list-style-type: none;
-    border: 2px;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    text-decoration: none;
-}
-
-li {
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-li a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 22px 20px 20px 24px;
-    resize: both;
-    border-radius: 4px;
-}
-
-li img {
-    vertical-align: middle;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
-
-li {
-    padding: 22px 16px 16px 24px;
-}
-
-li a:hover {
-    background-color: rgb(255, 87, 87);
-    border: radius 12px;
-    opacity: 0.8
-}
 
 
 
 
-li a :active {
-    border: radius 12px;
-    opacity: 0.5;
-}
+
+
+
+
+
+
 
 hr {
     display: block;
