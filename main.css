@@ -53,13 +53,14 @@ li {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
+    width:100%;
 }
 
 li a {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 24px 20px 24px 22px;
+    padding: auto;
     resize: both;
     border-radius: 4px;
 }
@@ -494,10 +495,7 @@ div.social-responsibility img {
     display: flex;
 }
 
-inclusive-culture h2 p {
-    float: right;
-}
-
+inclusive-culture h2 p,
 .inclusive-culture-text {
     float: right;
 }
