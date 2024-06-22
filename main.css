@@ -271,21 +271,6 @@ footer a:hover {
     margin-bottom: 80px;
 }
 
-@media screen and (max-width: 950px) {
-    .chef-picture img {
-      width: 100%;
-      float: center;
-    }
-    .home-1-hook{
-        text-align: center;
-        font-size: 43px;
-        width: 100%;
-    }
-    .home-1-hook p{
-        font-size: 14px;
-    }
-  }
-
 .button-to-apply {
     /* Padding/Margins */
     margin-top: 10px;
@@ -327,7 +312,8 @@ main-section-company-overview-2 .company-overview-1 {
     margin-top: -24px;
     margin-bottom: 16px;
     text-align: left;
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
+    font-size: 52px;
 }
 
 .company-overview-1 p {
@@ -338,8 +324,9 @@ main-section-company-overview-2 .company-overview-1 {
 .company-overview-1 img {
     float: right;
     margin-left: 20px;
+    margin-top: -7vw;
     height: auto;
-    width: 50%;
+    width: 40%;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -370,7 +357,8 @@ main-section-company-overview-2 .company-overview-1 {
     margin-top: 20px;
     margin-bottom: 16px;
     text-align: left;
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
+    font-size: 52px;
 }
 
 .employee-testimonials {
@@ -414,6 +402,32 @@ hr.main-page-divider {
     border-color: black;
     border-width:1px;
 }
+
+@media screen and (max-width: 950px) {
+    .chef-picture img {
+      width: 100%;
+      float: center;
+    }
+    .home-1-hook{
+        text-align: center;
+        font-size: 43px;
+        width: 100%;
+    }
+    .home-1-hook p{
+        font-size: 14px;
+    }
+    .company-overview-1 img{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .company-overview-1 h2{
+        font-size: 40px;
+    }
+    .company-overview-1 p{
+        margin-top: 62vw;
+        font-size: 16px;
+    }
+  }
 
 
 
