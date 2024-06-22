@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.5vw;
+
     font-family: "Open Sans", sans-serif;
 }
 
@@ -112,6 +112,16 @@ li a :active {
     background-color: #ffffff;
 }
 
+/* Iphone compatibility */
+
+@media screen and (max-width: 950px) {
+    .what-is-next h1 {
+        font-size: 40px;
+    }
+    .next-list-button {
+        font-size: 16px;
+    }
+  }
 
 
 
@@ -319,6 +329,7 @@ main-section-company-overview-2 .company-overview-1 {
 .company-overview-1 p {
     color: black;
     text-align: left;
+    font-size: 22px;
 }
 
 .company-overview-1 img {
@@ -334,7 +345,7 @@ main-section-company-overview-2 .company-overview-1 {
 .main-section-company-overview-2 {
     padding: auto;
     background-color: #ffffff;
-    font-size: 18px;
+    font-size: 22px;
     padding-top: 15px;
 }
 
@@ -354,6 +365,7 @@ main-section-company-overview-2 .company-overview-1 {
 
 .company-overview-2 h2 {
     color: rgb(255, 87, 87);
+    margin-left: 49vw;
     margin-top: 20px;
     margin-bottom: 16px;
     text-align: left;
@@ -368,7 +380,7 @@ main-section-company-overview-2 .company-overview-1 {
 .quotes-title {
     text-align: center;
     color: rgb(255, 87, 87);
-    font-size: 3.5vw;
+    font-size: 52px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -377,6 +389,7 @@ main-section-company-overview-2 .company-overview-1 {
     color: black;
     font-family: "Open Sans", sans-serif;
     font-style: italic;
+    font-size:22px;
 }
 
 .location-1 {
@@ -386,7 +399,7 @@ main-section-company-overview-2 .company-overview-1 {
 .location-1 h1 {
     color: rgb(255, 87, 87);
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 52px;
 }
 
 .location-1 h3 {
@@ -402,6 +415,8 @@ hr.main-page-divider {
     border-color: black;
     border-width:1px;
 }
+
+/* compatibility with phones */
 
 @media screen and (max-width: 950px) {
     .chef-picture img {
@@ -424,8 +439,27 @@ hr.main-page-divider {
         font-size: 40px;
     }
     .company-overview-1 p{
-        margin-top: 62vw;
+        margin-top: 58vw;
         font-size: 16px;
+    }
+    .company-overview-2 img{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .company-overview-2 h2{
+        font-size: 40px;
+        margin: 0px;
+    }
+    .company-overview-2 p{
+        margin-top: 58vw;
+        font-size: 16px;
+    }
+    .quotes-title, .location-1 h1 {
+        font-size: 40px;
+    }
+    
+    .quotes, .location-1 h3 {
+        font-size:16px;
     }
   }
 
