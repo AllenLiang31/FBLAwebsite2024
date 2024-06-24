@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FBLA Job openings</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
@@ -12,17 +13,20 @@
     <header>
     </header>
 
-    <nav>
-        <ul class="navigation-bar">
-            <li class="company-logo"><img src="pictures/Logo.png" alt="Company Logo"></li>
-            <li><a class="Home" href="home.html">Home</a></li>
-            <li><a class="Benefits" href="benefits.html">Benefits</a></li>
-            <li><a class="Job opening" href="job-opening.html"> Job opening </a> </li>
-            <li><a class="Apply" href="apply.html"> Apply </a> </li>
-            <li><a class="My account" href="my-account.html"> My account</a></li>
-        </ul>
+    <!-- Loads a hamburger icon for small screens-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <nav class="navigation-bar" id="navbar">
+
+        <img src="pictures/Logo.png" alt="Company Logo" class="company-logo">
+        <a class="active" href="home.html">Home</a>
+        <a class="Benefits" href="benefits.html">Benefits</a>
+        <a class="Job opening" href="job-opening.html"> Job opening </a>
+        <a class="Apply" href="apply.html"> Apply </a>
+        <a class="My account" href="my-account.html"> My account</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        
     </nav>
-    <hr class="navigation-bar-seperator">
 
 
     <main class="apply-main-1">
