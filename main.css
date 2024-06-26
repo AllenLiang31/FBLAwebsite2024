@@ -692,6 +692,8 @@ hr.benefits-line {
     /* Removes sliver of white space on the top and bottom of the divider */
     margin-top: -1px;
     margin-bottom: -1px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     /* styling the divider */
     border-style: solid;
     border-color: black;
