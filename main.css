@@ -645,24 +645,9 @@ hr.main-page-divider {
 
 .home-body, .home-html {
     animation-name: stop-scrolling;
-    animation-duration: 3.8s;
+    animation-duration: 2s;
 }
 
-
-/* second part */
-
-/* @keyframes fade-in {
-    from {scale: .8; opacity: 0;}
-    to {scale: 1; opacity: 1;}
-}
-
-.company-overview-1 img {
-    animation-name: fade-in;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-
-}
-*/
 
 
 
@@ -687,13 +672,14 @@ hr.main-page-divider {
     font-size: 56px;
     background-color: #ffffff;;
     text-align: center;
+    color: rgb(255, 87, 87);
 }
 
 .benefits-1 h2 {
     padding: 22px 16px 16px 24px;
-    color: rgb(255, 87, 87);
+    color: black;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 44px;
 }
 
 .benefits-1 p {
@@ -704,7 +690,7 @@ hr.main-page-divider {
 }
 
 div.inlcusive-culture img {
-    max-width: 200px;
+    max-width: 225px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -712,7 +698,7 @@ div.inlcusive-culture img {
 }
 
 div.perks-amenities img {
-    max-width: 200px;
+    max-width: 225px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -720,7 +706,7 @@ div.perks-amenities img {
 }
 
 div.clear-career-pathways img {
-    max-width: 200px;
+    max-width: 225px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -728,7 +714,7 @@ div.clear-career-pathways img {
 }
 
 div.social-responsibility img {
-    max-width: 200px;
+    max-width: 225px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -743,7 +729,7 @@ div.social-responsibility img {
     display: flex;
 }
 
-inclusive-culture h2 p,
+.inclusive-culture h2 p,
 .inclusive-culture-text {
     float: right;
 }
@@ -786,10 +772,30 @@ hr.benefits-line {
         font-size: 40px;
     }
     .benefits-1 h2 {
-        font-size: 24px;
+        width: 100%;
+        font-size: 30px;
     }
     .benefits-1 p {
         font-size: 16px;
+    }
+    div.inlcusive-culture img {
+        width: 100%;
+        float: none;
+    }
+    
+    div.clear-career-pathways img {
+        width: 100%; 
+        float: none;
+    }
+    
+    div.perks-amenities img {
+        width: 100%; 
+        float: none;
+    }
+    
+    div.social-responsibility img {
+        width: 100%; 
+        float: none;
     }
 }
 
