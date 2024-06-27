@@ -192,8 +192,8 @@ li a:hover {
     .what-is-next h1 {
         font-size: 24px;
     }
-    .next-list-button a{
-        font-size: 12px;
+    li {
+        padding: 0px 0px 0px 0px;
     }
 }
 
@@ -287,7 +287,7 @@ footer a:hover {
 }
 
 .home-1 h1 {
-    padding: 22px 16px 16px 24px;
+    padding: 22px 16px 22px 16px;
 }
 
 .home-1 h2 {
@@ -296,7 +296,10 @@ footer a:hover {
 }
 
 .home-1 p {
-    padding: 22px 16px 16px 24px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+    padding-right: 30px
 }
 
 .home-1 h3 {
@@ -307,14 +310,14 @@ footer a:hover {
 }
 
 .home-1-hook {
-    margin-left: 10px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 10px;
     color: rgb(255, 87, 87);
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
     /* font-size: 4.9vw; */
-    font-size: 72px;
+    font-size: 60px;
     text-align: left;
     display: flex start;
     flex-direction: column;
@@ -349,7 +352,6 @@ footer a:hover {
 }
 
 .chef-picture p {
-    /* font-size: 1.1vw; */
     font-size: 16px;
     margin-left: -24px;
     color: black;
@@ -357,6 +359,15 @@ footer a:hover {
     font-optical-sizing: auto;
     font-weight: 500;
     margin-bottom: 80px;
+}
+.chef-picture p.hiring-text {
+    font-size: 50px;
+    margin-left: -24px;
+    color: rgb(255, 87, 87);
+    font-family: "Open Sans", Roboto, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .button-to-apply {
@@ -502,10 +513,20 @@ hr.main-page-divider {
       width: 100%;
       float: center;
     }
+    .chef-picture p.hiring-text {
+        font-size: 24px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .chef-picture p {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
     .home-1-hook{
         text-align: center;
         font-size: 46px;
         width: 100%;
+        margin-left: 10px;
     }
     .home-1-hook p{
         font-size: 20px;
@@ -586,6 +607,64 @@ hr.main-page-divider {
         font-size:16px;
     }
   }
+
+
+/* CSS animations for home.html */
+
+/* first part */
+
+@keyframes home-1-hook-and-button {
+    0%   {right:0px;}
+    25%  {right:1000px;}
+    100% {right:0px;}
+}
+
+.home-1-hook p, .home-1-hook button, .chef-picture h1 {
+    animation-name: home-1-hook-and-button;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
+
+@keyframes chef-image {
+    0%   {left:0px;}
+    25%  {left:2000px;}
+    100% {left:0px;}
+}
+
+.chef-picture-2 {
+    animation-name: chef-image;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
+@keyframes stop-scrolling {
+    0% {margin: 0; height: 100%; overflow: hidden}
+    100% {margin: auto; height: auto; overflow: auto}
+}
+
+.home-body, .home-html {
+    animation-name: stop-scrolling;
+    animation-duration: 3.8s;
+}
+
+
+/* second part */
+
+/* @keyframes fade-in {
+    from {scale: .8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}
+
+.company-overview-1 img {
+    animation-name: fade-in;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+
+}
+*/
+
+
 
 
 
@@ -714,60 +793,6 @@ hr.benefits-line {
     }
 }
 
-/* CSS animations for home.html */
-
-/* first part */
-
-@keyframes home-1-hook-and-button {
-    0%   {right:0px;}
-    25%  {right:1000px;}
-    100% {right:0px;}
-}
-
-.home-1-hook p, .home-1-hook button, .chef-picture h1 {
-    animation-name: home-1-hook-and-button;
-    animation-duration: 2s;
-    position: relative;
-    animation-delay: -0.5s;
-}
-
-@keyframes chef-image {
-    0%   {left:0px;}
-    25%  {left:2000px;}
-    100% {left:0px;}
-}
-
-.chef-picture-2 {
-    animation-name: chef-image;
-    animation-duration: 2s;
-    position: relative;
-    animation-delay: -0.5s;
-}
-@keyframes stop-scrolling {
-    0% {margin: 0; height: 100%; overflow: hidden}
-    100% {margin: auto; height: auto; overflow: auto}
-}
-
-.home-body, .home-html {
-    animation-name: stop-scrolling;
-    animation-duration: 5s;
-}
-
-
-/* second part */
-
-/* @keyframes fade-in {
-    from {scale: .8; opacity: 0;}
-    to {scale: 1; opacity: 1;}
-}
-
-.company-overview-1 img {
-    animation-name: fade-in;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-
-}
-*/
 
 
 
