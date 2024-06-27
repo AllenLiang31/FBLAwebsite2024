@@ -611,8 +611,6 @@ hr.main-page-divider {
 
 /* CSS animations for home.html */
 
-/* first part */
-
 @keyframes home-1-hook-and-button {
     0%   {right:0px;}
     25%  {right:1000px;}
@@ -799,7 +797,33 @@ hr.benefits-line {
     }
 }
 
+/* CSS animations for benefits.html */
 
+@keyframes benefits-title-animation {
+    0%   {left:0px;}
+    25%  {left:1000px;}
+    100% {left:0px;}
+}
+
+.benefits-1-h1 {
+    animation-name: benefits-title-animation;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
+
+@keyframes benefits-page-text-and-img-animation {
+    0%   {right:0px;}
+    25%  {right:1000px;}
+    100% {right:0px;}
+}
+
+.benefits-1 h2, .benefits-1 img, .benefits-1 p {
+    animation-name: benefits-page-text-and-img-animation;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
 
 
 
@@ -950,9 +974,33 @@ div.job .details-button a {
 }
 
 
+/* CSS animations for benefits.html */
 
+@keyframes job-list-containers-animation {
+    0%   {right:0px;}
+    25%  {right:2000px;}
+    100% {right:0px;}
+}
 
+div.job {
+    animation-name: job-list-containers-animation;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
 
+@keyframes number-available-animation {
+    0%   {left:0px;}
+    25%  {left:2000px;}
+    100% {left:0px;}
+}
+
+.job-list-container h2 {
+    animation-name: number-available-animation;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: -0.5s;
+}
 
 
 
