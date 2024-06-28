@@ -29,50 +29,50 @@
     </nav>
 
     <main class="resume-form-main">
-        <div class="resume-form">
+        <div class="resume-input-block">
             <form action="#">
-                <div class="resume">
+                <div class="resume-title">
                     <h1>
                         Apply now!
                     </h1>
                 </div>
 
-                <div class ="form_input-apply-container">
-                    <label for="firstName"> First Name</label>
-                <div class = "information-input">
-                    <input type ="text" id="firstName" required>
+                <div class ="first-name">
+                    <h2>
+                        First Name
+                    </h2>
+                    <input type ="text" placeholder="Enter your first name..." id="firstName" required>
                 </div>
-                </div>
-                
-                <div class ="form_input-apply-container"><label for="lastName"> Last Name</label>
-                    <div class = "information-input">
-                        <input type ="text" id="lastName" required>
-                    </div>
-                </div>
-                
-                <div class ="form_input-apply-container">
-                    <label for="email"> Email</label>
-                <div class = "information-input">
-                    <input type ="text" id="email" required>
-                </div>
-                </div>
-                
-                <div class ="form_input-apply-container">
-                    <label for="phoneNumber"> Phone Number</label>
-                <div class = "information-input">
-                    <input type ="text" id="phoneNumber" required>
-                </div>
-                </div>
-                
-                
 
-
-                <div> 
-
+                <div class ="last-name">
+                    <h2>
+                        Last Name
+                    </h2>
+                    <input type ="text" placeholder="Enter your last name..." id="lastName" required>
                 </div>
+
+                <div class ="application-email">
+                    <h2>
+                        Email
+                    </h2>
+                    <input type ="email" placeholder="Enter your email..." id="applicationEmail" required>
+                </div>
+
+                <div class ="phone-number">
+                    <h2>
+                        Phone Number
+                    </h2>
+                    <input type ="text" placeholder="Enter your phone number..." id="phoneNumber" required>
+                </div>
+
                 <div class="selection">
-                    <select class="jobs">
-                        <option value="0">Select a job</option>
+
+                    <h2>
+                        Job
+                    </h2>
+
+                    <select class="jobs" id="selectJobs" required>
+                        <option value="">Select a Job</option>
                         <option value="1">Stir Fry Chef</option>
                         <option value="2">Fryer Chef</option>
                         <option value="3">Preparation Chef </option>
@@ -83,16 +83,31 @@
 
                 </div>
 
-                <div class="resumeinput">
-                    <input type="file">
+                <div class="resume-input">
+
+                    <h2>
+                        Upload Resume
+                    </h2>
+
+                    <input type="file" id="resumeInput" required>
                 </div>
+
+                <div class="comment-or-questions">
+
+                    <h2>
+                        Any comments or questions?
+                    </h2>
+
+                    <textarea id="commentOrQuestions" placeholder="Enter your comments or questions here (optional)."></textarea>
+
+                </div>
+
                 <div class="resumeButton">
                     <button class="resumeButton" type="submit">Submit</button>
                 </div>
+
             </form>
         </div>
-
-
 
     </main>
 
