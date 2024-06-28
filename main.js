@@ -69,8 +69,8 @@ function myFunction() {
     }
   }
 
-// Allows user to search for jobs easier
-function filterJobs() {
+  // Allows user to search for jobs easier
+  function filterJobs() {
     //lowercase everything 
     const searchInput = document.getElementById('search').value.toLowerCase();
     const jobs = document.querySelectorAll('.job');
@@ -89,7 +89,7 @@ function filterJobs() {
 }
 
 // Checks for valid email on contact home of footer
-// Listens if submit is clicked
+//listens if submit is clicked
 document.getElementById('contactForm').addEventListener('submit', function(event) {
    //get input
     var email = document.getElementById('email').value;
