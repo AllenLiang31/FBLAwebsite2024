@@ -47,14 +47,6 @@ li a:hover {
     transition: 0.3s ease-out;
 }
 
-
-
-
-
-
-
-
-
 /* CSS for Navigation bar */
 
 .navigation-bar {
@@ -153,14 +145,6 @@ li a:hover {
 
 }
 
-
-
-
-
-
-
-
-
 /* CSS for what's next section */
 
 .what-is-next,.want-to-apply {
@@ -189,8 +173,6 @@ li a:hover {
     font-size: 64px;
 }
 
-
-
 /* Phone compatibility */
 
 @media screen and (max-width: 950px) {
@@ -211,14 +193,6 @@ li a:hover {
         padding: 0px 0px 0px 0px;
     }
 }
-
-
-
-
-
-
-
-
 
 /* CSS for footer */
 
@@ -313,12 +287,6 @@ footer a:hover {
     transition: all 0.4s ease-out;
 }
 
-
-
-
-
-
-
 /* Phone compatibility */
 
 @media screen and (max-width: 1150px) {
@@ -341,7 +309,6 @@ footer a:hover {
         display: none;
     }
 }
-
 
 @media screen and (max-width: 720px) {
     .footer-4 {
@@ -368,17 +335,6 @@ footer a:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* CSS for legal-page.html */
 
 .legal-information-page ul {
@@ -402,13 +358,6 @@ footer a:hover {
 .legal-information-page a {
     font-weight: normal;
 }
-
-
-
-
-
-
-
 
 /* CSS for home.html */
 
@@ -776,16 +725,6 @@ hr.main-page-divider {
     animation-duration: 2s;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* CSS for benefits.html */
 
 .benefits-1 {
@@ -955,27 +894,6 @@ hr.benefits-line {
     animation-delay: -0.5s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CSS for job-opening.html */
 
 .job-opening-1 {
@@ -1117,10 +1035,6 @@ header {
   display: none !important;
 }
 
-
-
-
-
 /* phone compatibility */
 
 @media screen and (max-width: 950px) {
@@ -1137,7 +1051,6 @@ header {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* CSS animations for job-opening.html */
 
@@ -1166,20 +1079,6 @@ div.job {
     position: relative;
     animation-delay: -0.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* CSS for apply.html */
 
@@ -1316,16 +1215,6 @@ div.job {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* CSS for my-account.html */
 
 .apply-main-1 {
@@ -1455,21 +1344,6 @@ div.job {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* extra code (no clue where these go) */
 .already-have-account p {
     text-align: center;
     font-size: 16px;
@@ -1488,16 +1362,6 @@ div.job {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* CSS for TOS.html */
 
 .TOS-h1 {
@@ -1514,10 +1378,4 @@ div.job {
     color: black;
     margin: 0 2rem 1rem 2rem;
 }
-
-
-
-
-
-
 
