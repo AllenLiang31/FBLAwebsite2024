@@ -1072,6 +1072,41 @@ div.job .details-button a {
     color: black;
 }
 
+/* search bar CSS */
+
+header {
+    position: sticky;
+    z-index: 2;
+}
+
+.search-bar {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.search-bar input {
+    width: 50%;
+    min-width: 300px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.search-bar [list]::-webkit-list-button,
+.search-bar [list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+
+
+
+
 /* phone compatibility */
 
 @media screen and (max-width: 950px) {
@@ -1090,7 +1125,7 @@ div.job .details-button a {
 }
 
 
-/* CSS animations for benefits.html */
+/* CSS animations for job-opening.html */
 
 @keyframes job-list-containers-animation {
     0%   {right:0px;}
