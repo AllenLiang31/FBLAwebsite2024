@@ -163,7 +163,7 @@ li a:hover {
 
 /* CSS for what's next section */
 
-.what-is-next {
+.what-is-next,.want-to-apply {
     background-color: #ffffff;
 }
 
@@ -176,6 +176,20 @@ li a:hover {
     display: flex;
     background-color: #ffffff;
 }
+
+.want-to-apply h1{
+    color: rgb(255, 87, 87);
+    text-align: center;
+
+}
+.want-apply-button{
+    text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    font-size: 64px;
+}
+
+
 
 /* Phone compatibility */
 
