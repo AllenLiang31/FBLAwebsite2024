@@ -1172,7 +1172,7 @@ div.job {
 .resume-form-main {
     color: black;
     border-radius: 4px;
-    height: 135vh;
+    height: 60rem;
     display: flex;
     justify-content: center;
     background-image: url(pictures/Image\ for\ background\ of\ apply\ page.jpg);
@@ -1286,7 +1286,21 @@ div.job {
     opacity: 0.8;
 }
 
+/* phone compatibility */
 
+@media screen and (max-width: 950px) {
+    .resume-form-main {
+        margin-top: 60px;
+    }
+    .resume-title {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .resume-input-block {
+        margin: 64px 0px 64px 0px;
+    }
+}
 
 
 
