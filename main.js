@@ -100,3 +100,28 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         event.preventDefault();
     }
 });
+
+//slider
+const slider = document.querySelector(".slider");
+const slideImages = document.querySelector(".slideImages");
+
+const prevButton = document.querySelector('#prevButton');
+const nextButton = document.querySelector('#nextButton');
+
+let counter = 1;
+const size = slideImage[0].clientWidth;
+
+slider.style.trasform = 'translateX('+(-size*counter) + 'px)';
+
+nextButton.addEventListener('click', () => {
+    slider.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevButton.addEventListener('click', () => {
+    slider.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
