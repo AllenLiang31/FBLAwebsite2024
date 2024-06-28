@@ -69,6 +69,7 @@ function myFunction() {
     }
   }
 
+  // Allows user to search for jobs easier
   function filterJobs() {
     const searchInput = document.getElementById('search').value.toLowerCase();
     const jobs = document.querySelectorAll('.job');
@@ -84,3 +85,13 @@ function myFunction() {
         }
     });
 }
+
+// Checks for valid email on contact home of footer
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    var email = document.getElementById('email').value;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+    }
+});
