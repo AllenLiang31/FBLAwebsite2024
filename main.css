@@ -363,10 +363,11 @@ footer a:hover {
 
 .home-1 {
     background-color: #ffffff;
+    padding: 20px;
 }
 
 .home-1 h1 {
-    padding: 22px 16px 22px 16px;
+    padding: 22px 16px 20px 16px;
 }
 
 .home-1 h2 {
@@ -375,10 +376,8 @@ footer a:hover {
 }
 
 .home-1 p {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-left: 24px;
-    padding-right: 30px
+    padding: 10px 30px 0px 24px;
+    line-height: 1.6;
 }
 
 .home-1 h3 {
@@ -415,7 +414,7 @@ footer a:hover {
 }
 
 .chef-picture {
-    margin-top: 100px;
+    margin-top: 90px;
     display: flex;
     background-color: #ffffff;
 }
@@ -452,6 +451,7 @@ footer a:hover {
 .button-to-apply {
     /* Padding/Margins */
     margin-top: 10px;
+    margin-bottom: 3rem;
     /* Font */
     font-size: 22px;
     font-weight: bold;
@@ -463,11 +463,12 @@ footer a:hover {
     border-radius: 23px;
     background-color: rgb(255, 145, 77);
     border: none;
+    transition: background-color 0.3s ease-out;
 }
 
 .button-to-apply:hover {
     cursor: pointer;
-    background-color: rgb(255, 120, 36);
+    background-color: #ff7824;
 }
 
 .main-section-company-overview-1 {
@@ -490,12 +491,12 @@ main-section-company-overview-2 .company-overview-1 {
     margin-top: -24px;
     margin-bottom: 16px;
     text-align: left;
-    /* font-size: 3.5vw; */
     font-size: 52px;
 }
 
 .company-overview-1 p {
     color: black;
+    font-weight: normal;
     text-align: left;
     font-size: 22px;
 }
@@ -503,7 +504,7 @@ main-section-company-overview-2 .company-overview-1 {
 .company-overview-1 img {
     float: right;
     margin-left: 20px;
-    margin-top: -7vw;
+    margin-top: -5.5vw;
     height: auto;
     width: 40%;
     padding-left: 10px;
@@ -525,7 +526,7 @@ main-section-company-overview-2 .company-overview-1 {
 .company-overview-2 img {
     float: left;
     margin-left: 20px;
-    margin-top: -7vw;
+    margin-top: -2.5vw;
     height: auto;
     width: 50%;
     padding-left: 10px;
@@ -534,7 +535,7 @@ main-section-company-overview-2 .company-overview-1 {
 
 .company-overview-2 h2 {
     color: rgb(255, 87, 87);
-    margin-left: 49vw;
+    margin-left: 47.9vw;
     margin-top: 20px;
     margin-bottom: 16px;
     text-align: left;
