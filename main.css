@@ -1058,14 +1058,14 @@ div.job .details-button a {
 
 }
 
-.more-details-h1 {
+.more-details-h1, .sucesss-h1 {
     text-align: center;
     font-size: 45px;
     color: rgb(255, 87, 87);
     margin-top: 114px;
 }
 
-.more-details-p {
+.more-details-p, .success-p {
     margin: 22px 100px;
     text-align: center;
     font-size: 25px;
