@@ -1,2 +1,3 @@
 # FBLAwebsite2024
-Hello this is a bad website
+Hello, this website is created by Allen Liang and Vincent Liang.
+To access use this link: 
