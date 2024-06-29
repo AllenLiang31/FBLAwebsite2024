@@ -1187,8 +1187,8 @@ div.job {
     color: black;
     font-size: 20px;
     margin: auto;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 8px;
     border: none;
     outline: none;
