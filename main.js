@@ -56,7 +56,8 @@ function currentSlide(n) {
 }
 
 
-// if the slide index exceeds the max amount then it resets to 1, hides all slides except the one being shown, makes the dots active and deactivate
+// if the slide index exceeds the max amount then it resets to 1, 
+// hides all slides except the one being shown, makes the dots active and deactivate
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
