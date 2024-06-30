@@ -279,7 +279,7 @@ footer a:hover {
     border: none;
     color: white;
     font-size: 1rem;
-}
+}   
 
 #footer-email-btn:hover {
     cursor: pointer;
@@ -1073,7 +1073,7 @@ div.job {
     100% {left:0px;}
 }
 
-.job-list-container h2 {
+.job-list-container h2, .search-bar {
     animation-name: number-available-animation;
     animation-duration: 2s;
     position: relative;
