@@ -102,26 +102,35 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 //slider
-const slider = document.querySelector(".slider");
-const slideImages = document.querySelector(".slideImages");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-const prevButton = document.querySelector('#prevButton');
-const nextButton = document.querySelector('#nextButton');
 
-let counter = 1;
-const size = slideImage[0].clientWidth;
+//next and previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-slider.style.trasform = 'translateX('+(-size*counter) + 'px)';
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-nextButton.addEventListener('click', () => {
-    slider.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
 
-prevButton.addEventListener('click', () => {
-    slider.style.transition = "transform 0.4s ease-in-out";
-    counter--;
-    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
+// if the slide index exceeds the max amount then it resets to 1, hides all slides except the one being shown, makes the dots active and deactivate
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 
